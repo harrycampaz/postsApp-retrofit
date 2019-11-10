@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">paisesApp</string>
+    <string name="title_activity_view_post">ViewPostActivity</string>
 </resources>
