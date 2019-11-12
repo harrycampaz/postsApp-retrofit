@@ -5,7 +5,9 @@ import com.dezzapps.postsApp.model.Post;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 public interface GetPostsDataServices {
@@ -15,5 +17,9 @@ public interface GetPostsDataServices {
 
     @GET("posts/{id}")
     Call<Post> getOnePosts(@Path("id") int id);
+
+    @POST("posts")
+    Call<Post> postsData(@Body Post post);
+
 
 }

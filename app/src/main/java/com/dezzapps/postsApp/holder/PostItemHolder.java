@@ -15,9 +15,9 @@ import com.dezzapps.postsApp.view.ViewPostActivity;
 
 public class PostItemHolder extends RecyclerView.ViewHolder {
 
-    TextView postTitle;
-    TextView postBody;
-    Context context;
+    private TextView postTitle;
+    private TextView postBody;
+    private Context context;
 
     public PostItemHolder(@NonNull View itemView, Context context) {
         super(itemView);
